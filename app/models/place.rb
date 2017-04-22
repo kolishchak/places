@@ -125,4 +125,5 @@ class Place
     photos = Photo.find_photos_for_place(@id).skip(offset).limit(limit)
     photos.map {|photo| Photo.new(photo)}
   end
-  end
+  
+end
